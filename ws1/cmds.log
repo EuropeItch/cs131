@@ -1,0 +1,68 @@
+    1  passwd
+    2  ls
+    3  ls -lat
+    4  ls -latr
+    5  wget www.github.com
+    6  git init
+    7  dir
+    8  cd ~/Desktop
+    9  cd ~/cs131
+   10  pwd
+   11  dir
+   12  mkdir cs131
+   13  dir
+   14  cd cs131
+   15  ls
+   16  ls -lat
+   17  touch ws1-23fa.txt
+   18  ls
+   19  del ws1-23fa.txt
+   20  man
+   21  cmd
+   22  man cmd
+   23  cmd man
+   24  touch ws1.txt
+   25  dir
+   26  git status ws1.txt
+   27  git add ws1.txt
+   28  git status ws1.txt
+   29  git commit -m "This is my first commit"
+   30  git config --global user.email "github@stevenhdinh.com"
+   31  git branch
+   32  git push origin my-new-branch
+   33  git remote add origin https://github.com/EuropeItch/cs131.git
+   34  git push origin my-new-branch
+   35  git branch
+   36  git bheckout -b my-new-branch
+   37  git checkout -b my-new-branch
+   38  git branch
+   39  git push origin my-new-branch
+   40  git branch
+   41  dir
+   42  ls
+   43  ls -lat
+   44  git checkout -b master
+   45  git branch
+   46  git push -u origin master
+   47  git status
+   48  git commit
+   49  git config --global user.name "steven23fa"
+   50  git commit
+   51  cd cs131
+   52  dir
+   53  mkdir cs131
+   54  cd cs131
+   55  dir
+   56  git init
+   57  dir
+   58  touch ws1.txt
+   59  dir
+   60  ls
+   61  git status
+   62  cd cs131
+   63  dir
+   64  mk dir ws1
+   65  mkdir ws1
+   66  cd ws1
+   67  history
+   68  history > cmds.log
