@@ -1,0 +1,244 @@
+    1  passwd
+    2  ls
+    3  ls -lat
+    4  ls -latr
+    5  wget www.github.com
+    6  git init
+    7  dir
+    8  cd ~/Desktop
+    9  cd ~/cs131
+   10  pwd
+   11  dir
+   12  mkdir cs131
+   13  dir
+   14  cd cs131
+   15  ls
+   16  ls -lat
+   17  touch ws1-23fa.txt
+   18  ls
+   19  del ws1-23fa.txt
+   20  man
+   21  cmd
+   22  man cmd
+   23  cmd man
+   24  touch ws1.txt
+   25  dir
+   26  git status ws1.txt
+   27  git add ws1.txt
+   28  git status ws1.txt
+   29  git commit -m "This is my first commit"
+   30  git config --global user.email "github@stevenhdinh.com"
+   31  git branch
+   32  git push origin my-new-branch
+   33  git remote add origin https://github.com/EuropeItch/cs131.git
+   34  git push origin my-new-branch
+   35  git branch
+   36  git bheckout -b my-new-branch
+   37  git checkout -b my-new-branch
+   38  git branch
+   39  git push origin my-new-branch
+   40  git branch
+   41  dir
+   42  ls
+   43  ls -lat
+   44  git checkout -b master
+   45  git branch
+   46  git push -u origin master
+   47  git status
+   48  git commit
+   49  git config --global user.name "steven23fa"
+   50  git commit
+   51  cd cs131
+   52  dir
+   53  mkdir cs131
+   54  cd cs131
+   55  dir
+   56  git init
+   57  dir
+   58  touch ws1.txt
+   59  dir
+   60  ls
+   61  git status
+   62  cd cs131
+   63  dir
+   64  mk dir ws1
+   65  mkdir ws1
+   66  cd ws1
+   67  history
+   68  history > cmds.log
+   69  dir
+   70  vim cmds.log
+   71  git add cmds.log
+   72  git status
+   73  git commit
+   74  git remote add origin https://github.com/EuropeItch/cs131.git
+   75  git push -u origin main
+   76  git push -u origin master
+   77  git branch -M main
+   78  git status
+   79  ls
+   80  ls -latr
+   81  git config --global credential.helper store
+   82  git push -u origin main
+   83  dir
+   84  dir
+   85  ls
+   86  dir
+   87  ls -latr
+   88  ls -lat
+   89  ls cs131
+   90  vim cs131/ws1/
+   91  vim cs131/ws1/cmds.log 
+   92  rm -r cs131
+   93  rm -rf cs131
+   94  dir
+   95  ls
+   96  mkdir ws2
+   97  cd ws2
+   98  cd ws1
+   99  vim hellovim.txt
+  100  vim hellovim.txt
+  101  hellovim.txt
+  102  vim hellovim.txt
+  103  cd 131
+  104  cd cs131
+  105  ls
+  106  rm 'ws1-23fa.txt'
+  107  vim ws1.txt
+  108  rm 'ws1.txt'
+  109  ls
+  110  cd ws2
+  111  cd ~
+  112  ls
+  113  cd ws2
+  114  ls
+  115  touch test.txt
+  116  touch test2.txt
+  117  ls
+  118  rm test.txt
+  119  ls
+  120  rm test2.txt
+  121  vim sample.txt
+  122  sort sample.txt
+  123  wc sample.txt
+  124  cat sample.txt
+  125  man wc
+  126  wc sample.txt
+  127  vim sample.txt
+  128  wc sample.txt
+  129  vim sample.txt
+  130  uniq -c sample.txt
+  131  sort sample.txt
+  132  sort sample.txt > sample2.txt
+  133  cat sample2.txt
+  134  uniq -c sample2.txt
+  135  grep hello sample.txt
+  136  grep hello sample2.txt
+  137  grep -E "^h" sample.txt
+  138   git clone https://github.com/EuropeItch/cs131.git
+  139  cd cs131
+  140  ls
+  141   git clone https://github.com/EuropeItch/cs131.git
+  142  ls
+  143  cd 131
+  144  cd ws1
+  145  ls
+  146  cd cs131
+  147  ls
+  148  rm cs131
+  149  cd
+  150  cd cs131
+  151  ls
+  152  rm cs131
+  153  cd cs131
+  154  ls
+  155  rm cs131
+  156  cd cs131
+  157  ls
+  158  rmdir cs131
+  159  ls cs131
+  160  mkdir ws2
+  161  cd ws2
+  162  cp /datasets/taxidata.tar.gz .
+  163  ls
+  164  gzip taxidata.tar.gz
+  165  vim taxidata.tar.gz
+  166  cd cs131
+  167  cd ws2
+  168  ls
+  169  cd cs131
+  170  cd ws2
+  171  ls
+  172  tar zxvf taxidata.tar.gz
+  173  ls
+  174  touch results.txt
+  175  ls
+  176  ".*,.*,\"2019-03-12.*" 2019-03.csv | tail -n 29 > results.txt
+  177  grep ".*,.*,\"2019-03-12.*" 2019-03.csv | tail -n 29 > results.txt
+  178  cd taxidata
+  179  grep ".*,.*,\"2019-03-12.*" 2019-03.csv | tail -n 29 > results.txt
+  180  ls
+  181  vim results.txt
+  182  mv results.txt ../
+  183  mv results.txt ws2/
+  184  my results.txt ../
+  185  mv results.txt ../
+  186  mv ws2/
+  187  vim results.txt
+  188  ls
+  189  cd ws2
+  190  cd cs131
+  191  cd
+  192  cd cs131
+  193  cd ws2
+  194  ls
+  195  vim results.txt
+  196  wc results.txt
+  197  cd cs131
+  198  cd ws2
+  199  touch results2.txt
+  200  grep ".*,.*,\"2019-03-12.*/2019-03.csv | tail -n 20 > results2.txt
+  201  grep ".*,.*,\"2019-03-12.*" 2019-03.csv | tail -n 20 > results2.txt
+  202  ls
+  203  cd taxidata
+  204  grep ".*,.*,\"2019-03-12.*" 2019-03.csv | tail -n 20 > results2.txt
+  205  cd
+  206  cd cs131
+  207  cd ws2
+  208  ls
+  209  cat results2.txt
+  210  cd taxidata
+  211  ls
+  212  cd ..
+  213  ls
+  214  rm results.txt
+  215  ls
+  216  rm results2.txt
+  217  ls
+  218  mv taxidata/results2.txt /
+  219  cd taxidata/
+  220  ls
+  221  cd ..
+  222  mv /taxidata/results2.txt /
+  223  la
+  224  ls
+  225  cd taxidata/
+  226  ls
+  227  mv results2.txt ../
+  228  ls
+  229  cd
+  230  ls
+  231  cd ws2/
+  232  ls
+  233  cd
+  234  ls
+  235  cd cs131
+  236  ls
+  237  cd ws2
+  238  ls
+  239  cat results2.txt
+  240  wc results2.txt
+  241  wc -l results2.txt
+  242  wc -l results2.txt >> results2.txt 
+  243  cat results2.txt 
+  244  history > cmds.log
