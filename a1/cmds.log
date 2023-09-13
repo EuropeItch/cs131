@@ -1,0 +1,79 @@
+ 353  cd cs131
+  354  ls
+  355  mkdir a1
+  356  ls
+  357  cd a1
+  358  touch a1.txt
+  359  ls
+  360  vim a1.txt
+  361  cd cs131
+  362  cd a1
+  363  ls
+  364  man
+  365  dir man
+  366  man dir
+  367  man path
+  368  path
+  369  $HOME
+  370  echo $HOME
+  371  cd cs131
+  372  cd a1
+  373  cd temp
+  374  ls
+  375  ls temp
+  376  ls -l temp
+  377  touch temp/test
+  378  ls
+  379  ls -l temp
+  380  cd temp
+  381  ls
+  382  ls -lh temp
+  383  ls temp
+  384  chmod 666 temp
+  385  touch temp/test
+  386  ls -l
+  387  cd temp
+  388  chmod 777 temp
+  389  cd temp
+  390  ls
+  391  touch test.txt
+  392  cd ..
+  393  ls -l
+  394  cd temp
+  395  ls
+  396  rm test.txt
+  397  cd ..
+  398  pwd
+  400  ls
+  401  cd temp3
+  402  rm -rf temp2
+  403  ls
+  404  cd -
+  405  mkdir temp2
+  406  chmod 600 temp2
+  407  mv temp2 temp3
+  408  ls
+  409  cd temp3
+  410  ls
+  411  cp
+  412  cp -r
+  413  man cp
+  414  cp -r temp3 temp
+  415  cp -r temp3 temp2
+  416  cp -r temp2 temp3
+  417  ls
+  418  cd /proc/
+  419  ls
+  420  head meminfo
+  421  head cpuinfo
+  422  tail cpuinfo
+  423  cd /etc/
+  424  cat os-release
+  441  ls -l /etc/
+  442  /cd
+  443  cd
+  444  cd cs131
+  445  cd a1
+  446  cd
+  447  history
+

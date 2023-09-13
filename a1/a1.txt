@@ -1,0 +1,98 @@
+1.
+2. echo $HOME
+/mnt/scratch/steven23fa
+3. UID: 015208752
+groups
+steven23fa
+4. mkdir temp
+chmod 600 temp
+cd temp
+-bash: cd: temp: Permission denied
+ls temp
+ls -l temp
+count 0
+touch temp/test
+touch: cannot touch 'temp/test': Permission denied
+5. mkdir temp2
+chmod 600 temp2
+mv temp2 temp3
+cd temp3
+ls temp3
+temp2
+cp -r temp2 temp3
+ls
+temp2 temp3
+6. cd /proc/
+ls
+meminfo
+cpuinfo
+7. head meminfo
+MemTotal:       73080512 kB
+MemFree:        16395968 kB
+MemAvailable:   57614720 kB
+Buffers:          631232 kB
+Cached:         42112320 kB
+SwapCached:        25344 kB
+Active:         35043008 kB
+Inactive:        9383680 kB
+Active(anon):     517440 kB
+Inactive(anon):  2139840 kB
+Total Memory on Server: 73080512 kB
+8. head cpuinfo
+processor       : 0
+cpu             : POWER8 (architected), altivec supported
+clock           : 3425.000000MHz
+revision        : 2.1 (pvr 004b 0201)
+
+processor       : 1
+cpu             : POWER8 (architected), altivec supported
+clock           : 3425.000000MHz
+revision        : 2.1 (pvr 004b 0201)
+tail cpuinfo
+processor       : 255
+cpu             : POWER8 (architected), altivec supported
+clock           : 3425.000000MHz
+revision        : 2.1 (pvr 004b 0201)
+
+timebase        : 512000000
+platform        : pSeries
+model           : IBM,8247-22L
+machine         : CHRP IBM,8247-22L
+MMU             : Hash
+cat cpuinfo 
+CPU Count: 256
+Architecture (architected): POWER8
+Speed (clock): 3.425 gHz
+9. cd /etc/
+ls
+os-release
+cat os-release
+ Enterprise Linux 8.6
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+[steven23fa@sjsu etc]$ NAME="Red Hat Enterprise Linux"
+[steven23fa@sjsu etc]$ VERSION="8.6 (Ootpa)"
+[steven23fa@sjsu etc]$ ID="rhel"
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+OS: Red Hat Enterprise Linux 8.6
+10. ls -l /etc/
+lrwxrwxrwx.  1 root root       22 Apr  6  2022 os-release -> ..//usr/lib/os-release
+read write execute for all users
