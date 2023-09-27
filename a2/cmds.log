@@ -1,0 +1,26 @@
+1. cut -f2,17 -d ',' 2019-05.csv | grep -e "2019-05-11" | cut -f2 -d ',' > MayAmounts.txt 
+awk '{ total += $1; count++ } END { print total/count }' MayAmounts.txt >> a2.txt
+
+2. grep -Eo '[0.0-9.9]+' MayAmounts.txt | sort -rn | head -n 1 >> a2.txt
+
+3. egrep "^[^,]+,[^,]+,[^,]+,([3-9]|[1-9][0-9]+).0" 2019-05.csv | cut -d ',' -f 9 | sort | uniq -c | sort -nr | head -n 10 >> a2.txt
+ 
+4. cut -f2,8,9 -d ',' 2019-05.csv | grep -e "2019-05-20" | cut -f2,3 -d ',' > MostPopular.txt
+cut -f2 -d ',' MostPopular.txt | sort -n | uniq -c | sort -nr > MPPickup.txt
+head MPPickup.txt
+grep -e "236.0," MostPopular.txt | sort -n | uniq -c | sort -nr > MPDropoff.txt
+head -n 1 MPDropoff.txt >> a2.txt
+
+5. 
+cut -f8 -d ',' 2019-01 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-02 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-03 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-04 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-05 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-06 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-07 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-08 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-09 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-010 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-011 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
+cut -f8 -d ',' 2019-012 .csv | sort -n | uniq -c | sort -nr | head -n 1 >> a2.txt
