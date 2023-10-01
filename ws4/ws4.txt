@@ -1,0 +1,14 @@
+Task 1:
+l =
+total 20
+drwxrwxr-x 2 steven23fa steven23fa 4096 Sep 20 00:24 ws4taxidata
+drwxrwxr-x 2 steven23fa steven23fa 4096 Sep 20 02:30 FARE
+drwxr-xr-x 2 steven23fa steven23fa 4096 Sep 20 02:58 taxidata
+-rw-rw-r-- 1 steven23fa steven23fa   49 Oct  1 18:03 cmds.log
+-rw-rw-r-- 1 steven23fa steven23fa    9 Oct  1 18:03 ws4.txt
+w =
+      6      47     317
+
+Task 2:
+Average of 161.0-48.0 = 13.9764
+Average of 48.0-161.0 = 12.7389

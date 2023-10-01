@@ -1,0 +1,31 @@
+Task 1:
+vim .bashrc
+source .bashrc
+l > ws4.txt
+w >> ws4.txt
+
+Task 2:
+cd cs131
+mkdir ws4
+cd ws2
+cp -r taxidata ../ws4
+cd ../
+cd ws4
+cd taxidata
+mv 2019-06.csv ../
+cd ../
+mkdir FARE
+cut -f8,9,17 -d ',' 2019-06.csv | grep -e "^161.0-48.0" | cut -f3 -d ',' > 161.0-48.0.txt | mv 161.0-48.0.txt FARE
+cut -f8,9,17 -d ',' 2019-06.csv | grep -e "^48.0-161.0" | cut -f3 -d ',' > 48.0-161.0.txt | mv 48.0-161.0.txt FARE
+cd FARE
+awk '{ total += $1; count++ } END { print total/count }' 161.0-48.0.txt >> ../ws4.txt
+awk '{ total += $1; count++ } END { print total/count }' 48.0-161.0.txt >> ../ws4.txt
+cd ../
+vim ws4.txt
+history | tail -n 30 > cmds.log
+vim cmds.log
+git add ws4.txt
+git add cmds.log
+git commit
+git push
+
