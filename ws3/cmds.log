@@ -1,0 +1,23 @@
+Prep:
+cd cs131
+cd ws2
+cp -r taxidata ../ws3
+cd ../
+cd ws3
+cd taxidata
+mv 2019-01.csv ../
+mv 2019-02.csv ../
+cd ../
+head -n 2 2019-01.csv
+Task 1:
+cut -f8 -d ',' 2019-01.csv | sort -n | uniq -c | sort -nr | head -n 3 > ws3.txt
+Task 2:
+cut -f8 -d ',' 2019-02.csv | sort -n | uniq -c | sort -nr | head -n 3 >> ws3.txt
+Editing + Submitting:
+vim ws3.txt
+history | tail -n 30 > cmds.log
+vim cmds.log
+git add ws3.txt
+git add cmds.log
+git commit
+git push
