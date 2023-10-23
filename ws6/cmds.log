@@ -1,0 +1,7 @@
+1. sed -n '/^2\.0/p' 2019-11.csv > vendor2.csv
+2. sed 's/[:,\"\-]//g' 2019-11.csv | head -n > no-separators.csv
+3. awk -F, 'BEGIN {OFS=","} {for(i=1;i<=NF;i++) if($i ~ /^[0-9]+\.[0-9]+$/) $i=int($i); print}' no-separators.csv > no-fractions.csv
+
+wc vendor2.csv > ws6.txt
+head -n 10 no-separators.csv >> ws6.txt
+head -n 10 no-fractions.csv >> ws6.txt
