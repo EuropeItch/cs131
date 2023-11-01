@@ -1,0 +1,2 @@
+1. awk -F, '$17' >= 10 { tip[$14]++ } END { for (i in tip) print i, tip[i] }' 2019-12.csv > results.txt
+2. sort -k2 -nr results.txt | head -n 20 > ws7.txt
