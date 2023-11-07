@@ -7,4 +7,4 @@ set xlabel "Distance"
 set ylabel "Total Amount (Paid)"
 set autoscale x
 set autoscale y
-plot 'a3t4.dat' using 1:2 with circles
+plot 'a3t4.dat' using 1:2 with points
