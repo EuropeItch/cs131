@@ -1,0 +1,21 @@
+Pull Dataset from Github:
+git pull
+
+Unzip Dataset:
+unzip archive.zip
+
+Run a Script to Separate Male and Female Scores:
+vim gender.sh
+
+Cut and Format the Necessary Fields:
+cut -d',' -f6,7 male.csv | sed 's"//g' > maleMathNReading.csv
+cut -d',' -f6,7 female.csv | sed 's/"//g' > femaleMathNReading.csv
+
+Create GNUPlot Scripts:
+vim scatter.plt
+cp scatter.plt scatter2.plt
+vim scatter2.plt
+
+Run in GNUPlot:
+gnuplot scatter.plt
+gnuplot scatter2.plt

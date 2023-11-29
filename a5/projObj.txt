@@ -1,0 +1,1 @@
+For this project, I would like to sort male and female math and reading scores into two different scatter plots and see the general area the two take up.
